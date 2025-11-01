@@ -1,0 +1,12 @@
+{
+  "sql-db": {
+    "resource_types": ["Microsoft.Sql/servers/databases"],
+    "metrics": ["cpu_percent", "dtu_consumption_percent", "data_io_percent"],
+    "aggregations": ["Average"]
+  },
+  "vm": {
+    "resource_types": ["Microsoft.Compute/virtualMachines"],
+    "metrics": ["Percentage CPU", "Network In Total", "Network Out Total"],
+    "aggregations": ["Average"]
+  }
+}
